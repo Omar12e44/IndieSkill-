@@ -1,0 +1,67 @@
+.register-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .register-left {
+    flex: 1;
+    color: black;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .register-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .register-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .register-left ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .register-left img {
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .register-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .register-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .ant-form-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .ant-form-item-label {
+    text-align: left;
+  }
+  
+  .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ant-btn {
+    width: 100%;
+  }
