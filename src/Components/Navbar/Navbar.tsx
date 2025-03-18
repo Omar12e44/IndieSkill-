@@ -14,8 +14,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick, onRegisterClick }) => {
         <Link to="/">LOGO</Link>
       </div>
       <div className="navbar-links">
-        <Link to="/home">Home</Link>
-        <Link to="/link">Perfil</Link>
+        <Link to="/">Home</Link>
+        <Link to="/perfil">Perfil</Link>
         <div className="dropdown">
           <button className="dropbtn">Dropdown</button>
           <div className="dropdown-content">

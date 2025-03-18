@@ -1,70 +1,89 @@
 .home-content {
-    padding: 20px;
-  }
-  
-  .hero-section {
-    text-align: center;
-    background-color: #004d40;
-    color: white;
-    padding: 50px 0;
-  }
-  
-  .hero-section h1 {
-    font-size: 36px;
-  }
-  
-  .hero-section h1 span {
-    font-style: italic;
-  }
-  
-  .search-bar {
-    margin-top: 20px;
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px;
-  }
-  
-  .search-bar button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: white;
-    color: #004d40;
-    border: 1px solid #004d40;
-    cursor: pointer;
-  }
-  
-  .categories-section {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .categories-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .categories {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .category {
-    border: 1px solid #ddd;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .category h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .category p {
-    color: green;
-    cursor: pointer;
-  }
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+  padding: 50px 0;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+}
+
+.hero-section h1 span {
+  font-style: italic;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: #004d40;
+  border: 1px solid #004d40;
+  cursor: pointer;
+}
+
+.categories-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.categories-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.category h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.category p {
+  color: green;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
