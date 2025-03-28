@@ -1,0 +1,51 @@
+.categories-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.categories-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.categories-input input,
+.categories-input textarea {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.categories-input button {
+  margin-left: 10px;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ant-card:hover {
+  transform: scale(1.05);
+}
+
+.ant-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-card p {
+  margin: 0;
+  color: #555;
+}
+
+.categories-container .ant-row {
+  margin-top: 20px;
+}
+
+.categories-container .ant-col {
+  display: flex;
+  justify-content: center;
+}

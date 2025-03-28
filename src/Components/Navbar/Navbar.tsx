@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Button  } from 'antd';
+import { LogoutOutlined, HomeOutlined, UserOutlined, MailOutlined } from '@ant-design/icons'; // Importar iconos
+
 import './Navbar.css';
 
 interface NavbarProps {
@@ -21,6 +23,9 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick, onRegisterClick }) => {
     localStorage.removeItem('token');
     localStorage.removeItem('email');
     setUserEmail(null);
+    window.location.reload(); // Recargar la página para reflejar el cambio de estado
+    window.location.href = '/'; // Redirigir a /home
+
   };
 
 
@@ -30,26 +35,34 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick, onRegisterClick }) => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">LOGO</Link>
-      </div>
+  <div className="navbar-logo">
+  <Link to="/">
+    <span className="logo-text">IndieSkill</span>
+  </Link>
+</div>
       <div className="navbar-links">
-        <Link to="/">Home</Link>
-        <Link to="/perfil">Perfil</Link>
-        <div className="dropdown">
-          <button className="dropbtn">Dropdown</button>
-          <div className="dropdown-content">
-            <Link to="/option1">Option 1</Link>
-            <Link to="/option2">Option 2</Link>
-            <Link to="/option3">Option 3</Link>
-          </div>
-        </div>
+      <Link to="/">
+          <HomeOutlined /> Home
+        </Link>
+        <Link to="/perfil">
+          <UserOutlined /> Perfil
+        </Link>
+        <Link to="/contacto">
+          <MailOutlined /> Contacto
+        </Link>
+
 
         {/* Mostrar botones según estado de autenticación */}
         {userEmail ? (
           <>
-            <Button color= "red" variant = "solid" className="logout-btn" onClick={handleLogout}>Logout</Button>
-          </>
+   <Button 
+            type="primary" 
+            danger 
+            icon={<LogoutOutlined />} 
+            onClick={handleLogout}
+          >
+            Logout
+          </Button>          </>
         ) : (
           <>
             <button className="join-btn" onClick={onRegisterClick}>JOIN</button>

@@ -1,81 +1,90 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .navbar-logo a {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .navbar-links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropbtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: black;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .join-btn {
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .login-btn {
-    background-color: white;
-    color: green;
-    padding: 5px 10px;
-    border: 1px solid green;
-    border-radius: 5px;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.join-btn {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre icono y texto */
+  text-decoration: none;
+  color: black; /* Color negro para los links */
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #555; /* Color gris oscuro al pasar el mouse */
+}
+
+.icon {
+  font-size: 18px;
+  color: black; /* Asegurar que los iconos sean negros */
+}
